@@ -9,7 +9,7 @@ class student(forms.Form):
     AGE=forms.IntegerField()
     EMAIL=forms.EmailField()
     RE_ENTER_EMAIL=forms.EmailField()
-
+    
     def clean(self):
         e=self.cleaned_data['EMAIL']
         r=self.cleaned_data['RE_ENTER_EMAIL']
